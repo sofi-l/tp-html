@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-cover bg-center" style="background-image: url('fondo4.jpg'); margin-top:5%;">
+    <!-- Barra lateral-->
+    <div
+        class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] owerflow-y-auto text-center bg-gray-900">
+        <div class="text-gray-100 text-xl">
+            <div class="p-2.5 mt-1 flex items-center">
+                <i class="bi bi-person-circle px-2 py-1 bg-black rounded-md"></i>
+                <h1 class="font-bold text-gray-200 text-[15px] ml-3">Usuario</h1>
+                <i class="bi bi-justify ml-20 px-2.5 py-3 cursor-pointer "></i>
+
+
+            </div>
+            <hr class="my-2 text-gray-600">
+        </div>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700 text white">
+            <i class="bi bi-search text-sm"></i>
+            <input type="text" placeholder="Buscar" class="text-[15px] ml-4 w-full bg-transparent focus:outline-nome">
+
+        </div>
+
+        <div class="p-2.5 mt-3 rounded-md px-4 duration-300 ">
+            <a href="index.html"
+                class="flex items-center text-[15px] ml-4 text-gray-200 cursor-pointer hover:bg-blue-600 text-white">
+                Inicio</a>
+        </div>
+
+        <div class="p-2.5 mt-3 rounded-md px-4 duration-300 ">
+            <a href="editAlbum.html"
+                class="flex items-center text-[15px] ml-4 text-gray-200 cursor-pointer hover:bg-blue-600 text-white">
+                Editar Álbum</a>
+        </div>
+
+        <div class="p-2.5 mt-3 rounded-md px-4 duration-300 ">
+            <a href="addSongs.html"
+                class="flex items-center text-[15px] ml-4 text-gray-200 cursor-pointer hover:bg-blue-600 text-white">
+                Añadir Canción</a>
+        </div>
+        <div class="p-2.5 mt-3 rounded-md px-4 duration-300 ">
+            <a href="login.html"
+                class="flex items-center text-[15px] ml-4 text-gray-200 cursor-pointer hover:bg-blue-600 text-white">
+                Cerrar Sesión</a>
+        </div>
+
+
+
+    </div>
+    <!--Titulo del álbum-->
+    <div class="mt-10 left-1/4">
+        <h2 class="text-zinc-400/90 text-5xl font-bold text-center"> Harder Than It Looks </h2>
+    </div>
+    <!--Descripción del álbum-->
+    <div class="mt-20 left-1/4  ">
+        <p class="text-zinc-400/90 text-sm font-bold"> Harder Than It Looks es el sexto álbum de la banda canadiense de
+            pop punk Simple Plan siendo lanzado el 6 de mayo de 2022 de forma independiente.Este es el primer álbum
+            lanzado sin sello discográfico y la última contribución de David Desrosiers. El álbum obtuvo críticas
+            positivas de los críticos. Harder Than It Looks generó cuatro sencillos: "The Antidote", "Ruin My Life" con
+            Deryck Whibley de Sum 41, "Congratulations" y "Wake Me Up (When This Nightmare's Over)". Para promocionar el
+            disco, la banda realizó una gira por Estados Unidos y el sudeste asiático.</p>
+    </div>
+    <!--Canciones del álbum con título, duración, opción de eliminar y de escuchar en Youtube-->
+    <div class="flex flex-col mt-10 justify-center max-w-lg mx-auto mb-5">
+
+        <div class="flex flex-col space-y-2 mt-49 mx-auto justify-center max-w-lg mb-5">
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Wake Me Up
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:36
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=cqg2gRa6qA0" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Ruin My Life
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:19
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=b1Ny_C5XGNQ" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    The Antidote
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:16
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=n5oTbOYR84o" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Million Pictures of You
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:26
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=2cFGLMVZcE8" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Anxiety
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:30
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=4oAWnIyLlEY" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Congratulations
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:17
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=QMLx5eN_3UU" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Iconic
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:06
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=IPQtgqSVeYU" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Best Day of My Life
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:27
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=_Pegi-9udDc" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Slow Motion
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    4:00
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=YbB-wYTmcQ8" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Two
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:38
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=oQK5W22-xiY" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+           
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

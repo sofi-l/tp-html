@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-cover bg-center" style="background-image: url('fondo4.jpg'); margin-top:5%;">
+    <!-- Barra lateral-->
+    <div
+        class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] owerflow-y-auto text-center bg-gray-900">
+        <div class="text-gray-100 text-xl">
+            <div class="p-2.5 mt-1 flex items-center">
+                <i class="bi bi-person-circle px-2 py-1 bg-black rounded-md"></i>
+                <h1 class="font-bold text-gray-200 text-[15px] ml-3">Usuario</h1>
+                <i class="bi bi-justify ml-20 px-2.5 py-3 cursor-pointer "></i>
+
+
+            </div>
+            <hr class="my-2 text-gray-600">
+        </div>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700 text white">
+            <i class="bi bi-search text-sm"></i>
+            <input type="text" placeholder="Buscar" class="text-[15px] ml-4 w-full bg-transparent focus:outline-nome">
+
+        </div>
+
+        <div class="p-2.5 mt-3 rounded-md px-4 duration-300 ">
+            <a href="index.html"
+                class="flex items-center text-[15px] ml-4 text-gray-200 cursor-pointer hover:bg-blue-600 text-white">
+                Inicio</a>
+        </div>
+
+        <div class="p-2.5 mt-3 rounded-md px-4 duration-300 ">
+            <a href="editAlbum.html"
+                class="flex items-center text-[15px] ml-4 text-gray-200 cursor-pointer hover:bg-blue-600 text-white">
+                Editar Álbum</a>
+        </div>
+
+        <div class="p-2.5 mt-3 rounded-md px-4 duration-300 ">
+            <a href="addSongs.html"
+                class="flex items-center text-[15px] ml-4 text-gray-200 cursor-pointer hover:bg-blue-600 text-white">
+                Añadir Canción</a>
+        </div>
+        <div class="p-2.5 mt-3 rounded-md px-4 duration-300 ">
+            <a href="login.html"
+                class="flex items-center text-[15px] ml-4 text-gray-200 cursor-pointer hover:bg-blue-600 text-white">
+                Cerrar Sesión</a>
+        </div>
+
+
+
+    </div>
+    <!--Titulo del álbum-->
+    <div class="mt-10 left-1/4">
+        <h2 class="text-zinc-400/90 text-5xl font-bold text-center"> No Pads, No Helmets... Just Balls </h2>
+    </div>
+    <!--Descripción del álbum-->
+    <div class="mt-20 left-1/4  ">
+        <p class="text-zinc-400/90 text-sm font-bold"> No Pads, No Helmets... Just Balls es el álbum debut de la banda
+             Simple Plan. Fue lanzado al mercado el 19 de marzo de 2002. La banda lanzó cuatro sencillos de
+            este álbum. El álbum llegó al número treinta y cinco en Estados Unidos, y veintinueve en Australia, y
+            recibió un disco de platino en Estados Unidos. Fue lanzado bajo el sello Atlantic Records. En el álbum
+            participaron varios artistas, Mark Hoppus de Blink-182 en I'd Do Anything y Joel Madden de Good Charlotte en
+            You Don't Mean Anything. Es el álbum más exitoso de la banda, y uno de los álbumes referentes del género pop
+            punk y rock alternativo</p>
+    </div>
+    <!--Canciones del álbum con título, duración, opción de eliminar y de escuchar en Youtube-->
+    <div class="flex flex-col mt-10 justify-center max-w-lg mx-auto mb-5">
+
+        <div class="flex flex-col space-y-2 mt-49 mx-auto justify-center max-w-lg mb-5">
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    I'd Do Anything
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:17
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=H2M7zo8ZziE" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    The Worst Day Ever
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:27
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=VhtumanAUBE" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    You Don't Mean Anything
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    2:18
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=6d_NYoV8XBI" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    I'm Just a Kid
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:18
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=_GOR5gvQwDI" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    When I'm With You
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    2:37
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=s9tqMS7TfUs" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Meet You There
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    4:!4
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=EtwFlrdzFvk" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Addicted
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:52
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=qvpNa5O-0-8" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    My Alien
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:08
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=3nXXwbT_M1Q" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    God Must Hate Me
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    2:44
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=j7nLw-b1Yfk" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    I Won't Be There
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:09
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=DuNScVdAtq8" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    One Day
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    3:15
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=gVKgBA0bMjA" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gradient-to-b from-gray-700 to-zinc-900 rounded-lg p-4 flex items-center">
+                <div class="flex-auto text-white text-sm font-bold mr-4">
+                    Perfect
+                </div>
+                <div class="flex-none w-14 text-white text-sm font-bold mr-4">
+                    4:37
+                </div>
+                <div class="flex-none w-14">
+                    <button class="text-red-500 hover:text-red-700 mr-4">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button>
+                </div>
+                <div class="flex-none w-14">
+                    <a href="https://www.youtube.com/watch?v=RUi54JTgL5s" class="text-red-500 hover:text-red-700">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
